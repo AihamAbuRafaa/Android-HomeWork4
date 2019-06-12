@@ -27,12 +27,12 @@ public class MainActivity extends AppCompatActivity
 
     public void LoginBtn_handle(View view)
     {
-        TextView message = (TextView)findViewById(R.id.LoginMsg);
+        TextView msg = (TextView)findViewById(R.id.LoginMsg);
         EditText email = (EditText)findViewById(R.id.emailET);
         EditText password = (EditText)findViewById(R.id.passwordET);
         if(email.getText().toString().isEmpty() || password.getText().toString().isEmpty())
         {
-            message.setText("Please fill out all fields.");
+            msg.setText("Please fill out all fields.");
             return;
         }
         Account check_account = new Account(email.getText().toString(), password.getText().toString());
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity
             startActivity(notes);
         }
         else
-            message.setText("Email or Password is incorrect");
+            msg.setText("Email or Password is incorrect");
     }
 
     public void registerBtn_handle(View view)
