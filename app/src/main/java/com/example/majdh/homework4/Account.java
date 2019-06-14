@@ -16,9 +16,9 @@ public class Account implements BaseColumns
 
     public String email, password;
 
-    public Account(String email, String password)
+    public Account(String emaill, String password)
     {
-        this.email = email;
+        this.email = emaill;
         this.password = password;
     }
 
