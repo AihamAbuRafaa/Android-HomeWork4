@@ -64,9 +64,9 @@ public class Note implements BaseColumns, Serializable
         return on_date;
     }
 
-    public void setId(int id)
+    public void setId(int idd)
     {
-        this.id = id;
+        this.id = idd;
     }
 
     public void setContent(String content)
